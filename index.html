@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MultiPage Registration</title>
+</head>
+<body>
+
+<form id="regForm">
+
+    <div class="back tab">
+            <div>
+                <div>
+                   <br> <label for="Name" class="label">Name  <br>
+                </div>
+                   
+                <div class="twoline">
+                    <input type="text" id="f1" placeholder="  First" oninput="this.className = 'half'" onkeyup="white(this.value)" onkeydown="white(this.value)" class="half">
+                    <input type="text" id="f2" placeholder="  Last" oninput="this.className = 'half'" onkeyup="white(this.value)" onkeydown="white(this.value)" class="half">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="Date">Date Of Birth  <br>
+                </div>
+                <input type="date" id="f3" class="full" oninput="this.className = 'full'" onkeyup="white(this.value)" onkeydown="white(this.value)" placeholder="MM/DD/YYYY">
+            </div>
+            <div>
+                <div>
+                    <label for="email">Email  <br>
+                </div>
+                <input type="email" id="f4" class="full" onkeyup="white(this.value)" onkeydown="white(this.value)" oninput="this.className = 'full'">
+            </div>
+            <div>
+                <div>
+                    <label for="FName">Father's Name  <br>
+                </div>
+                <div class="twoline">
+                    <input type="text" id="f5" placeholder="  First" onkeyup="white(this.value)" onkeydown="white(this.value)" class="half" oninput="this.className = 'half'">
+                    <input type="text" id="f6" placeholder="  Last" onkeyup="white(this.value)" onkeydown="white(this.value)" class="half" oninput="this.className = 'half'">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="MName">Mother's Name  <br>
+                </div>
+                <div class="twoline">
+                    <input type="text" id="f7" placeholder="  First" onkeyup="white(this.value)" onkeydown="white(this.value)" class="half" oninput="this.className = 'half'">
+                    <input type="text" id="f8" placeholder="  Last" onkeyup="white(this.value)" onkeydown="white(this.value)" class="half" oninput="this.className = 'half'">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="Gender">Gender  <br>
+                </div>
+                <div class="radio">
+                    <div class="radioitem">
+                        <span>
+                            <input type="radio"  name="Gender"  id="Gender1" value="Male" oninput="this.className = ''" > 
+                        </span>
+                        <span>
+                            <input type="radio" name="Gender" id="Gender2" value="Female" oninput="this.className = ''"> 
+                        </span>
+                    </div>  
+                    <div class="gendericon">
+                        <span style="margin-top: 8px;">M</span>
+                        <span style="margin-top: 26px;">F</span>
+                    </div>
+                </div>
+                 
+            </div>
+            <div>
+                <div>
+                    <label for="Nationality">Nationality  <br>
+                </div>
+                <input type="text" class="full" id="f9" onkeyup="white(this.value)" onkeydown="white(this.value)" oninput="this.className = 'full'">
+            </div>
+            <div>
+                <div>
+                    <label for="Home Address">Home Address  <br>
+                </div>
+                <input type="text" placeholder="  Street Address" onkeyup="white(this.value)" onkeydown="white(this.value)" class="full" id="f10" oninput="this.className = 'full'"> <br>
+                <div class="twoline ">
+                    <input type="text" placeholder="  City" onkeyup="white(this.value)" onkeydown="white(this.value)" class="half" id="f11" oninput="this.className = 'half'">
+                    <input type="text" placeholder="  Country" onkeyup="white(this.value)" onkeydown="white(this.value)" class="half" id="f12" oninput="this.className = 'half'">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="TelephoneH">Telephone-Home</label>  <br>
+                </div>
+                <input type="text"  placeholder="  ### ### ####" onkeyup="white(this.value)" onkeydown="white(this.value)" class="full" id="f13" oninput="this.className = 'full'">
+            </div>
+            <div>
+                <div>
+                    <label for="TelephoneM">Telephone-Mobile</label>  <br>
+                </div>
+                <input type="text" placeholder="  ### ### ####" onkeyup="white(this.value)" onkeydown="white(this.value)" class="full" id="f14" oninput="this.className = 'full'">
+            </div>
+
+
+            <div>
+                <span id="alert1"></span>
+            </div>
+    </div>
+
+
+
+
+    <div class="back tab">
+        <div>
+            <div>
+                <br> <label for="Name" class="label">HSC Institution name  <br>
+            </div>
+               
+            <div class="twoline">
+                <input type="text" class="full" id="f15" placeholder="  HSC Institution name" oninput="this.className = 'full'">
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="">HSC Board  <br>
+            </div>
+            <input type="text" class="full" id="f16" placeholder="  i.e CBSC, ICSC or State board" oninput="this.className = 'full'">
+        </div>
+        <div>
+            <div>
+                <label for="">Score in HSC in percentage  <br>
+            </div>
+            <input type="text" class="full" id="f17" placeholder="  Ex. 90%" oninput="this.className = 'full'">
+        </div>
+        <div>
+            <div>
+                <label for="">SSC Institution name  <br>
+            </div>
+            <div class="twoline">
+                <input type="text" class="full" id="f18"  placeholder="  Ex KIIT UNIVERSITY" oninput="this.className = 'full'">
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="">SSC Board  <br>
+            </div>
+            <input type="text" class="full" id="f19"  placeholder="  i.e CBSC, ICSC or State board" oninput="this.className = 'full'">
+        </div>
+        <div>
+            <div>
+                <label for="">Score in SSC in percentage  <br>
+            </div>
+            <input type="text" class="full" id="f20" placeholder="  Ex. 90%" oninput="this.className = 'full'">
+        </div>
+        <div>
+            <div>
+                <label for="">Currently pursuing  <br>
+            </div>
+            <input type="text" class="full" id="f21" placeholder="  10th,12th,Btech,Bsc etc" oninput="this.className = 'full'">
+        </div>
+        <div>
+            <div>
+                <label for="">Current educational institution name  <br>
+            </div>
+            <input type="text" class="full" id="f22" placeholder="  Ex ABIT,Cuttack" oninput="this.className = 'full'">
+        </div>
+        <div>
+            <div>
+                <div>
+                    <label for="">Overall percentage  <br>
+                </div>
+                <input type="text" class="full" id="f23" placeholder="  Ex. 90%" oninput="this.className = 'full'">
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="">Current backlogs if any</label>  <br>
+            </div>
+            <input type="text" class="full" id="f24" placeholder="  Yes or No" oninput="this.className = 'full'">
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="back2 tab">
+        <div>
+            <div>
+                <br> <label for="" class="Sagar">Recent passport size photograph  <br>
+            </div>
+               
+            <div>
+                <br><input type="file" class="full" id="f25"  oninput="this.className = 'full'">
+            </div>
+        </div>
+        <div>
+            <div>
+                <br> <label for="" class="Sagar">HSC mark sheet  <br>
+            </div>
+               
+            <div>
+                <br><input type="file" class="full" id="f26"*-  oninput="this.className = 'full'">
+            </div>
+        </div>
+        <div>
+            <div>
+                <br> <label for="" class="Sagar">SSC mark sheet  <br>
+            </div>
+               
+            <div>
+                <br><input type="file" class="full" id="f27"  oninput="this.className = 'full'">
+            </div>
+        </div>
+        <div>
+            <div>
+                <br> <label for="" class="Sagar">All semesters mark sheet in a single PDF or docs  <br>
+            </div>
+               
+            <div>
+                <br><input type="file" class="full" id="f28"  oninput="this.className = 'full'">
+            </div>
+        </div>
+       
+
+    </div>
+
+
+    <div style="overflow:auto;">
+        <div style="float:right;">
+          <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+          <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+    </div>
+   
+
+
+    <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+      </div>
+
+</form>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
